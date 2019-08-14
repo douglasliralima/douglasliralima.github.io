@@ -1,5 +1,7 @@
 body {
     color : #26458b;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25vw;
 }
 
 #wrapper {
@@ -9,23 +11,38 @@ body {
     border-color: #9fc5e8ff;
 }
 
-#Introduction {
-    font-size : x-large;
-    margin: 3%;
+.row {
+    margin: 3% 0%;
+}
 
+.icon {
+    width: 3vw;
+    height: 3vw;
+}
+
+#introduction {
+    width: 480px;
+    font-size : 2vw;
+    margin: 5% 30% 5% 0%;
+}
+
+.description {
+    font-size: 1.5vw
 }
 
 h1 {
     margin: 3%;
     font-weight:bold;
-    font-size: xx-large;
-    color : #1c336a
+    font-size: 2vw;
+    color : #1c336a;
 }
+
 ul {
-    margin: 2%;
+    text-align: left;
+    margin-bottom: 8%
 }
 
 li {
     display: inline;
-    padding: 20px;
+    margin-right: 10%;
 }
