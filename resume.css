@@ -1,0 +1,11 @@
+#resume div.information{
+    display:inline-block;
+    margin-left : 10%;
+    margin-right : 10%;
+    width: 380px;
+}
+
+#resume div.information ul li{
+    list-style-type: none;
+    padding: 10px;
+}

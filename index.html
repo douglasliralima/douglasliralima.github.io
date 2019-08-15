@@ -11,69 +11,112 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-
+        <link rel="stylesheet" href="navigation.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="resume.css">
 </head>
 
 <body>
-        <div id = "wrapper">
+    <div class = "nav">
         <ul>
                 <li>
-                        <img class = "icon" src = "Assets/ExclamationIcon.jpg"/>
-                        <a href="index.html">Hello Stranger</a>
+                        <a href="#home">Home</a>
                 </li>
                 <li>
-                        <img class = "icon" src = "Assets/ArrowIcon.png"/>
-                        <a href="projects.html">Projects</a>
+                        <a href="#projects">Projects</a>
                 </li>
-        </ul>
-                
+                <li>
+                        <a href="#resume">Resume</a>
+                </li>
+            </ul>
+    </div>
+    
+    
+    <div id = home>
         <p id = "introduction">
-                Hey there, I’m Douglas. I’m a software Engineer, that currently codes based 
-                in Brazil. While I enjoy full stack development of products, I also venture 
-                in other fields of computer science such as data science, data engineering, 
-                deep learning and so on.
+            Hello there, I’m <strong>Douglas</strong>.
+            <br><br>
+
+            I really like to code, since in client or server side with 
+            <span style = "background-color: #9fc5e8">python</span> or 
+            <span style = "background-color: #ffe599">JavaScript</span>,
+            until science fields like 
+            <span style = "background-color: #f9cb9c">Data Science</span>, 
+            <span style = "background-color: #ffd966">Data Engineering</span>, 
+            <span style = "background-color: #b1c5c9">optimization</span>
+            and 
+            <span style = "background-color: #ea9999">deep learning</span>.
         </p>
-        
+    </div>
 
-        <h1>Experience</h1>
-
-        <p class = "description">
-        <strong>Data Scientist</strong> Nov 2018 - Aug 2019 <br>
-        Armazem PB
-        <br><br>
-        
-        <strong>Researcher</strong> Jun 2018 - Present <br>
-        LAVID - Laboratório de aplicações de vídeo digital
-        <br><br>
-        </p>
-
-        <h1>Education</h1>
-        <p class = "description">
-                <strong>Scholarship holder</strong> Nov 2018 - Nov 2019<br>
-                PET - Programa de educação tutorial
-                <br><br>
-
-                <strong>B.S. Computer Science</strong> Oct 2019<br>
-                UFPB - Federal University of paraiba
-                <br><br>
-
-        </p>
-        
-        <h1>Tutorials</h1>
-        
-        <a href = "https://www.youtube.com/watch?v=c5BIEfZJZ4w&list=PL7EM5rJ9p2kNQf6upsyNXVgFIenFEmOWd">Vanilla neural Network in portuguese</a>
-        <footer>
-                        <a href="https://github.com/douglasliralima" target="_blank">
-                                <img src="Assets/github.png" title="github link" alt="github link">
-                        </a>
+    <hr>
+    
+    <div id = "projects">
+        <ul>
+                <li>Selling Forecaster</li>
+                <li>Libras Translator</li>
+                <li>Dungeon Scrolls</li>
+                <li>Web-Numerical Calculus</li>
+                <li>Data Structure Visualization</li>
+        </ul>      
+    </div>
+    
+    <hr>
+    
+    <div id = "resume">
+        <div class = "information">
+            <div class = "infBackground"><h1>Experience</h1></div><br>
+            <ul>
+                <li>
+                    <strong>Data Scientist</strong> Nov 2018 - Aug 2019 <br>
+                    Armazem PB
+                </li>
+                <li>
+                    <strong>Researcher</strong> Jun 2018 - Present <br>
+                    Lab of Digital Video Applications
+                </li>
+            </ul>
                 
-                        <a href="https://www.linkedin.com/in/douglasliralima/" target="_blank">
-                                <img src="Assets/linkedin.png" title="github link" alt="github link">
-                        </a>
-                </footer>
+
         </div>
+
+        <div class = "information">
+            <div class = "infBackground"><h1>Education</h1></div><br>
+            <ul>
+                <li>
+                    <strong>Scholarship holder</strong> Nov 2018 - Nov 2019<br>
+                    Tutorial Education Program
+                </li>
+                <li>
+                        <strong>B.S. Computer Science</strong> Oct 2019<br>
+                        UFPB - Federal University of paraiba
+                </li>
+            </ul>
+        </div>
+
+        <div class = "information">
+            <div class = "infBackground"><h1>Tech Skills</h1></div><br>
+            <ul>
+                <li>JavaScript, python, Java, C/C++;</li>
+                <li>HTML, CSS;</li>
+                <li>SQL, SQLite, PostgreSQL, MySQL;</li>
+                <li>Flask, Django, React, Bootstrap, Nodejs, Android;</li>
+            </ul>
+        </div>
+    
+        <div class = "information">
+            <div class = "infBackground"><h1>Soft Skills</h1></div><br>
+            <ul>
+                <li>Leadership, Teamwork;</li>
+                <li>Communication, Flexibility;</li>
+                <li>Professionalism, Responsability;</li>
+                <li>Self-motivated, Willing to learn;</li>
+                <li>Interpersonal skills, Positive attitude;</li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 
