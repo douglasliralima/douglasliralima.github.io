@@ -1,9 +1,3 @@
-#resume div.information {
-    display:inline-block;
-    margin-left : 15%;
-    width: 380px;
-}
-
-#resume div.information ul li{
+div#resume ul li{
     list-style-type: none;
 }

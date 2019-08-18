@@ -13,6 +13,7 @@
     display: inline-block;
     padding: 20px;
 }
+
 p#projectDescription .title{
     font-size: 25px;
     font-weight: 700;
@@ -24,10 +25,12 @@ p#projectDescription .char{
     font-size: 20px;
     animation: an 2s ease-out 1 both;
     display: inline-block;
+
+    word-break: keep-all;
 }
 
 div#projects ul {
-    list-style-type : none
+    list-style-type : none;
 }
 
 div#projects li button {
@@ -35,6 +38,7 @@ div#projects li button {
     background-color: inherit;
     font-weight: inherit;
     border: none;
+    text-align: left;
 }
 
 div#projects li button:hover {
@@ -43,8 +47,6 @@ div#projects li button:hover {
     font-weight: inherit;
     border: none;
 }
-
-
 
 @keyframes an{
     from{
@@ -60,4 +62,11 @@ div#projects li button:hover {
 div#projects a:hover {
     color : #999999;
     font-weight: inherit;
+}
+
+div#projects input.control{
+    background-color: #fff;
+    width: 35px;
+    height: 12px;
+    margin : 5px;
 }

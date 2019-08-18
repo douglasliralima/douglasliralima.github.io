@@ -1,5 +1,9 @@
+Index: https://codepen.io/ettrics/pen/WRbGRN
+    - Adicionar um Navbar melhor
+    - Fazer a paginação das sessões
+
 Index-Projetos:
-    - Funcionalidade de click no titulo dos projetos, fazer a mudança da descrição
+    - Arrumar o design da sessão de Projetos
     - Funcionalidade do título do projeto estar no meio e a mudança da cor ser suave com uma
     barra de rolagem
 
@@ -8,3 +12,5 @@ DetalhesProjetos:
     - Fazer o protótipo da página e montar sua estrutura
     - Fazer a descrição dos projetos
     - Definir seus estilos
+
+0.4.7v - Functionality of click in title of projects and change the description

@@ -40,7 +40,7 @@ function letterAnimation(title){
     {
         newDom += '<span class="title">' + (title[i] == ' ' ? '&nbsp;' : title[i])+ '</span>';
     }
-    newDom += "<br><br>"
+    newDom += "<br>"
 
     //Body
     for(let i = 0; i < text.innerText.length; i++)

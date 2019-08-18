@@ -59,77 +59,97 @@
     <hr>
     
     <div id = "projects">
-        <ul>
-            <li id = "Project0"><button onclick="return pula(5, 0)">Selling Forecaster</button></li>
-            <li id = "Project1"><button onclick="return pula(5, 1)">Libras Translator</button></li>
-            <li id = "Project2"><button onclick="return pula(5, 2)">Dungeon Scrolls</button></li>
-            <li id = "Project3"><button onclick="return pula(5, 3)">Web-Numerical Calculus</button></li>
-            <li id = "Project4"><button onclick="return pula(5, 4)"></button>Data Structure Visualization</button></li>
-        </ul>
-        <p id = "projectDescription">
-            Criação de uma API REST, capaz de realizar a previsão de vendas de produto e 
-            estimativa automática de estoque.
-        </p>
-        <script type="text/javascript">
-            letterAnimation("Selling Forecaster");
-        </script>
-        <button type="button" onclick="vem(5)">Volta</button>
-        <button type="button" onclick="vai(5)">Avança</button>
+        <div class="row">
+            <div class="col">
+                <ul >
+                    <li id = "Project0"><button onclick="return pula(5, 0)">Selling Forecaster</button></li>
+                    <li id = "Project1"><button onclick="return pula(5, 1)">Libras Translator</button></li>
+                    <li id = "Project2"><button onclick="return pula(5, 2)">Dungeon Scrolls</button></li>
+                    <li id = "Project3"><button onclick="return pula(5, 3)">Web-Numerical Calculus</button></li>
+                    <li id = "Project4"><button onclick="return pula(5, 4)">Data Structure Visualization</button></li>
+                </ul>           
+            </div>
+            <div class="col">
+                <ul>
+                    <li>
+                        <input type="image" onclick="vem(5)" src="Assets/ArrowLeft.png" class = "control">
+                        <input type="image" onclick="vai(5)" src="Assets/ArrowRight.png" class = "control">
+                    </li>
+                    <li>
+                            <p id = "projectDescription">
+                                    Criação de uma API REST, capaz de realizar a previsão de vendas de produto e 
+                                    estimativa automática de estoque.
+                                </p>
+                                <script type="text/javascript">
+                                    letterAnimation("Selling Forecaster");
+                                </script>
+                    </li>
+                </ul>   
+             </div>
+          </div>
     </div>
     
     <hr>
     
     <div id = "resume">
-        <div class = "information">
-            <div class = "infBackground"><h1>Experience</h1></div><br>
-            <ul>
-                <li>
-                    <strong>Data Scientist</strong> Nov 2018 - Aug 2019 <br>
-                    Armazem PB
-                </li><br>
-                <li>
-                    <strong>Researcher</strong> Jun 2018 - Present <br>
-                    Lab of Digital Video Applications
-                </li>
-            </ul>
-                
+        <div class = "row">
+            <div class = "col">
+                    <ul>
+                        <li><h1>Experience</h1></li><br>
 
-        </div>
+                        <li>
+                            <strong>Data Scientist</strong> Nov 2018 - Aug 2019 <br>
+                            Armazem PB
+                        </li><br>
+                        <li>
+                            <strong>Researcher</strong> Jun 2018 - Present <br>
+                            Lab of Digital Video Applications
+                        </li>
+                    </ul>
+                        
+        
+                </div>
+        
+                <div class = "col">
+                    <ul>
+                        <li><h1>Education</h1></li><br>
 
-        <div class = "information">
-            <div class = "infBackground"><h1>Education</h1></div><br>
-            <ul>
-                <li>
-                    <strong>Scholarship holder</strong> Nov 2018 - Nov 2019<br>
-                    Tutorial Education Program
-                </li><br>
-                <li>
-                        <strong>B.S. Computer Science</strong> Oct 2019<br>
-                        UFPB - Federal University of paraiba
-                </li>
-            </ul>
+                        <li>
+                            <strong>Scholarship holder</strong> Nov 2018 - Nov 2019<br>
+                            Tutorial Education Program
+                        </li><br>
+                        <li>
+                            <strong>B.S. Computer Science</strong> Oct 2019<br>
+                            UFPB - Federal University of paraiba
+                        </li>
+                    </ul>
+                </div>
         </div>
-        <br>
-        <div class = "information">
-            <div class = "infBackground"><h1>Tech Skills</h1></div><br>
-            <ul>
-                <li>JavaScript, python, Java, C/C++;</li><br>
-                <li>HTML, CSS;</li><br>
-                <li>Flask, Django, React, Bootstrap, Nodejs, Android;</li><br>
-                <li>SQL, SQLite, PostgreSQL, MySQL;</li><br>
-                <li>Hadoop ecosystem, tensorflow, sklearn</li><br>
-            </ul>
-        </div>
-    
-        <div class = "information">
-            <div class = "infBackground"><h1>Soft Skills</h1></div><br>
-            <ul>
-                <li>Leadership, Teamwork;</li><br>
-                <li>Communication, Flexibility;</li><br>
-                <li>Professionalism, Responsability;</li><br>
-                <li>Self-motivated, Willing to learn;</li><br>
-                <li>Interpersonal skills, Positive attitude;</li><br><br>
-            </ul>
+        
+        <div class = "row">
+            <div class = "col">
+                    <ul>
+                        <li><h1>Tech Skills</h1></li><br>
+
+                        <li>JavaScript, python, Java, C/C++;</li><br>
+                        <li>HTML, CSS;</li><br>
+                        <li>Flask, Django, React, Bootstrap, Nodejs, Android;</li><br>
+                        <li>SQL, SQLite, PostgreSQL, MySQL;</li><br>
+                        <li>Hadoop ecosystem, tensorflow, sklearn</li><br>
+                    </ul>
+                </div>
+            
+                <div class = "col">
+                    <ul>
+                        <li><h1>Soft Skills</h1></li><br>
+
+                        <li>Leadership, Teamwork;</li><br>
+                        <li>Communication, Flexibility;</li><br>
+                        <li>Professionalism, Responsability;</li><br>
+                        <li>Self-motivated, Willing to learn;</li><br>
+                        <li>Interpersonal skills, Positive attitude;</li><br><br>
+                    </ul>
+                </div>
         </div>
     </div>
 </body>
