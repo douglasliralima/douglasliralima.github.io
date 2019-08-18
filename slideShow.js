@@ -31,21 +31,25 @@ function ProjectText(ProjectNumber){
 
 function letterAnimation(title){
     var text = document.getElementById('projectDescription');
-    var newDom = '';
+    var newDom = '<a href = "projects/' + title.replace(/ /g, '') + '.html" >';
     var animationDelay = 6;
 
+    //Montagem da tag com classificacao de chars
     //Title
     for(let i = 0; i < title.length; i++)
     {
         newDom += '<span class="title">' + (title[i] == ' ' ? '&nbsp;' : title[i])+ '</span>';
     }
     newDom += "<br><br>"
+
     //Body
     for(let i = 0; i < text.innerText.length; i++)
     {
         newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
     }
-
+    newDom += "</a>"
+    console.log(newDom)
+    //Adicionado o tempo de animação nos chars
     text.innerHTML = newDom;
     var length = text.children.length;
 
@@ -62,7 +66,7 @@ function vai(nProj){
     }
     stateModule.changeState((stateModule.getState() + 1) % nProj); //Circular array
     document.getElementById("Project" + stateModule.getState()).style = "font-weight:700";
-    console.log(ProjectText(stateModule.getState()));
+    
     text = ProjectText(stateModule.getState()); //Position 0 - Title, Position 1 - Description
     document.getElementById("projectDescription").innerHTML = text[1]
     letterAnimation(text[0]);

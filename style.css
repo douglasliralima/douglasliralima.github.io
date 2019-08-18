@@ -15,3 +15,17 @@ div {
 h1{
     font-weight: 700;
 }
+
+a {
+    color : inherit;
+}
+
+a:hover {
+    color : inherit;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}

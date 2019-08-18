@@ -36,3 +36,13 @@ p#projectDescription .char{
         transform: perspective(500px) translate3d(0, 0, 0);
     }
 }
+
+p#projectDescription a:hover {
+    color : #999999;
+    font-weight: inherit;
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
