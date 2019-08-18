@@ -1,0 +1,8 @@
+#projects ul li{
+    font-weight: 300;
+    font-size: 24pt;
+}
+
+#projects ul li:first-child{
+    font-weight: 700;
+}

@@ -11,11 +11,17 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+        <!--CSS-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="navigation.css">
         <link rel="stylesheet" href="home.css">
         <link rel="stylesheet" href="resume.css">
+        <link rel="stylesheet" href="projects.css">
+        
+        
+        <!--JavaScript-->
+        <script src="slideShow.js"></script>
 </head>
 
 <body>
@@ -38,11 +44,10 @@
         <p id = "introduction">
             Hello there, I’m <strong>Douglas</strong>.
             <br><br>
-
-            I really like to code, since in client or server side with 
+            I really enjoy coding, from client or server side with 
             <span style = "background-color: #9fc5e8">python</span> or 
             <span style = "background-color: #ffe599">JavaScript</span>,
-            until science fields like 
+            to science fields such as 
             <span style = "background-color: #f9cb9c">Data Science</span>, 
             <span style = "background-color: #ffd966">Data Engineering</span>, 
             <span style = "background-color: #b1c5c9">optimization</span>
@@ -55,12 +60,21 @@
     
     <div id = "projects">
         <ul>
-                <li>Selling Forecaster</li>
-                <li>Libras Translator</li>
-                <li>Dungeon Scrolls</li>
-                <li>Web-Numerical Calculus</li>
-                <li>Data Structure Visualization</li>
-        </ul>      
+            <li id = "Project0">Selling Forecaster</li>
+            <li id = "Project1">Libras Translator</li>
+            <li id = "Project2">Dungeon Scrolls</li>
+            <li id = "Project3">Web-Numerical Calculus</li>
+            <li id = "Project4">Data Structure Visualization</li>
+        </ul>
+        <p id = "projectDescription">
+            Criação de uma API REST, capaz de realizar a previsão de vendas de produto e 
+            estimativa automática de estoque.
+        </p>
+        <script type="text/javascript">
+            letterAnimation("Selling Forecaster");
+        </script>
+        <button type="button" onclick="vem(5)">Volta</button>
+        <button type="button" onclick="vai(5)">Avança</button>
     </div>
     
     <hr>
@@ -72,7 +86,7 @@
                 <li>
                     <strong>Data Scientist</strong> Nov 2018 - Aug 2019 <br>
                     Armazem PB
-                </li>
+                </li><br>
                 <li>
                     <strong>Researcher</strong> Jun 2018 - Present <br>
                     Lab of Digital Video Applications
@@ -88,32 +102,33 @@
                 <li>
                     <strong>Scholarship holder</strong> Nov 2018 - Nov 2019<br>
                     Tutorial Education Program
-                </li>
+                </li><br>
                 <li>
                         <strong>B.S. Computer Science</strong> Oct 2019<br>
                         UFPB - Federal University of paraiba
                 </li>
             </ul>
         </div>
-
+        <br>
         <div class = "information">
             <div class = "infBackground"><h1>Tech Skills</h1></div><br>
             <ul>
-                <li>JavaScript, python, Java, C/C++;</li>
-                <li>HTML, CSS;</li>
-                <li>SQL, SQLite, PostgreSQL, MySQL;</li>
-                <li>Flask, Django, React, Bootstrap, Nodejs, Android;</li>
+                <li>JavaScript, python, Java, C/C++;</li><br>
+                <li>HTML, CSS;</li><br>
+                <li>Flask, Django, React, Bootstrap, Nodejs, Android;</li><br>
+                <li>SQL, SQLite, PostgreSQL, MySQL;</li><br>
+                <li>Hadoop ecosystem, tensorflow, sklearn</li><br>
             </ul>
         </div>
     
         <div class = "information">
             <div class = "infBackground"><h1>Soft Skills</h1></div><br>
             <ul>
-                <li>Leadership, Teamwork;</li>
-                <li>Communication, Flexibility;</li>
-                <li>Professionalism, Responsability;</li>
-                <li>Self-motivated, Willing to learn;</li>
-                <li>Interpersonal skills, Positive attitude;</li>
+                <li>Leadership, Teamwork;</li><br>
+                <li>Communication, Flexibility;</li><br>
+                <li>Professionalism, Responsability;</li><br>
+                <li>Self-motivated, Willing to learn;</li><br>
+                <li>Interpersonal skills, Positive attitude;</li><br><br>
             </ul>
         </div>
     </div>
