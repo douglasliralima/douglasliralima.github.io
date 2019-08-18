@@ -26,6 +26,26 @@ p#projectDescription .char{
     display: inline-block;
 }
 
+div#projects ul {
+    list-style-type : none
+}
+
+div#projects li button {
+    color : inherit;
+    background-color: inherit;
+    font-weight: inherit;
+    border: none;
+}
+
+div#projects li button:hover {
+    color : #999999;
+    background-color: inherit;
+    font-weight: inherit;
+    border: none;
+}
+
+
+
 @keyframes an{
     from{
         opacity: 0;
@@ -37,12 +57,7 @@ p#projectDescription .char{
     }
 }
 
-p#projectDescription a:hover {
+div#projects a:hover {
     color : #999999;
     font-weight: inherit;
-    text-decoration: underline;
-}
-
-a:active {
-    text-decoration: underline;
 }

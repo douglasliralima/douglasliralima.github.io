@@ -64,6 +64,7 @@ function vai(nProj){
     for(var i = 0; i < nProj; i++){
         document.getElementById("Project" + i).style = "font-weight:300";
     }
+
     stateModule.changeState((stateModule.getState() + 1) % nProj); //Circular array
     document.getElementById("Project" + stateModule.getState()).style = "font-weight:700";
     
@@ -81,6 +82,7 @@ function vem(nProj){
     for(var i = 0; i < nProj; i++){
         document.getElementById("Project" + i).style = "font-weight:300";
     }
+
     var novoValor = ((stateModule.getState() - 1) % nProj);
     if (novoValor < 0){
         stateModule.changeState(nProj - 1);
@@ -88,7 +90,23 @@ function vem(nProj){
         stateModule.changeState(Math.abs((stateModule.getState() - 1) % nProj));
     }
     document.getElementById("Project" + stateModule.getState()).style = "font-weight:700";
-    title, description = ProjectText(stateModule.getState());
-    document.getElementById("projectDescription").innerHTML = description
-    letterAnimation(title);
+
+    text = ProjectText(stateModule.getState()); //Position 0 - Title, Position 1 - Description
+    document.getElementById("projectDescription").innerHTML = text[1]
+    letterAnimation(text[0]);
+}
+
+function pula(nProj, idProj){
+    projetos = new Array(nProj);
+    for(var i = 0; i < nProj; i++){
+        document.getElementById("Project" + i).style = "font-weight:300";
+    }
+
+    stateModule.changeState(idProj)
+    console.log(stateModule.getState())
+    document.getElementById("Project" + stateModule.getState()).style = "font-weight:700";
+
+    text = ProjectText(stateModule.getState()); //Position 0 - Title, Position 1 - Description
+    document.getElementById("projectDescription").innerHTML = text[1]
+    letterAnimation(text[0]);
 }
