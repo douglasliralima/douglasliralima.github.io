@@ -3,6 +3,7 @@
 
 <head>
         <meta charset="utf-8">
+        <title>Douglas Dimension</title>
         <!--Bootstrap stuff-->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,33 +15,24 @@
         <!--CSS-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="navigation.css">
         <link rel="stylesheet" href="home.css">
         <link rel="stylesheet" href="resume.css">
         <link rel="stylesheet" href="projects.css">
-        
+        <link rel="stylesheet" href="contact.css">
+
         
         <!--JavaScript-->
         <script src="slideShow.js"></script>
 </head>
 
 <body>
-    <div class = "nav">
+    <div class = "section" id = "contact">
         <ul>
-                <li>
-                        <a href="#home">Home</a>
-                </li>
-                <li>
-                        <a href="#projects">Projects</a>
-                </li>
-                <li>
-                        <a href="#resume">Resume</a>
-                </li>
-            </ul>
+            <li><a href = "http://github.com/douglasliralima" target="_blank"><img class = "icon" src = "Assets/github.png"></a></li>
+            <li><a href = "https://www.linkedin.com/in/douglasliralima/" target="_blank"><img class = "icon" src = "Assets/linkedin.png"></a></li>
+        </ul>    
     </div>
-    
-    
-    <div id = home>
+    <div class = "section" id = home>
         <p id = "introduction">
             Hello there, I’m <strong>Douglas</strong>.
             <br><br>
@@ -55,10 +47,7 @@
             <span style = "background-color: #ea9999">deep learning</span>.
         </p>
     </div>
-
-    <hr>
-    
-    <div id = "projects">
+    <div class = "section" id = "projects">
         <div class="row">
             <div class="col">
                 <ul >
@@ -82,16 +71,14 @@
                                 </p>
                                 <script type="text/javascript">
                                     letterAnimation("Selling Forecaster");
-                                </script>
+                                    setInterval(function(){vai(5);}, 8000)                                </script>
                     </li>
                 </ul>   
              </div>
           </div>
     </div>
-    
-    <hr>
-    
-    <div id = "resume">
+        
+    <div class = "section" id = "resume">
         <div class = "row">
             <div class = "col">
                     <ul>
@@ -124,30 +111,14 @@
                         </li>
                     </ul>
                 </div>
-        </div>
-        
-        <div class = "row">
             <div class = "col">
                     <ul>
                         <li><h1>Tech Skills</h1></li><br>
 
-                        <li>JavaScript, python, Java, C/C++;</li><br>
-                        <li>HTML, CSS;</li><br>
-                        <li>Flask, Django, React, Bootstrap, Nodejs, Android;</li><br>
-                        <li>SQL, SQLite, PostgreSQL, MySQL;</li><br>
-                        <li>Hadoop ecosystem, tensorflow, sklearn</li><br>
-                    </ul>
-                </div>
-            
-                <div class = "col">
-                    <ul>
-                        <li><h1>Soft Skills</h1></li><br>
-
-                        <li>Leadership, Teamwork;</li><br>
-                        <li>Communication, Flexibility;</li><br>
-                        <li>Professionalism, Responsability;</li><br>
-                        <li>Self-motivated, Willing to learn;</li><br>
-                        <li>Interpersonal skills, Positive attitude;</li><br><br>
+                        <li>Python, Flask, Django, Java, Android;</li><br>
+                        <li>HTML, JavaScript, React, Nodejs, CSS, Bootstrap;</li><br>
+                        <li>SQL, SQLite, PostgreSQL, MySQL, FireBase, MongoDB;</li><br>
+                        <li>Hadoop ecosystem, Tensorflow, Sklearn</li><br>
                     </ul>
                 </div>
         </div>

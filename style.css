@@ -7,8 +7,13 @@ strong {
     font-weight: 700;
 }
 
-div {
-    margin : 20px 0px;
+div.section {
+    margin-bottom: 2%;
+}
+
+div#home{
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 h1{

@@ -48,7 +48,7 @@ function letterAnimation(title){
         newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
     }
     newDom += "</a>"
-    console.log(newDom)
+
     //Adicionado o tempo de animação nos chars
     text.innerHTML = newDom;
     var length = text.children.length;
@@ -71,10 +71,6 @@ function vai(nProj){
     text = ProjectText(stateModule.getState()); //Position 0 - Title, Position 1 - Description
     document.getElementById("projectDescription").innerHTML = text[1]
     letterAnimation(text[0]);
-    /**
-    stateModule.changeState(stateModule.getState()++)
-    console.log(stateModule.getState())
-     */
 }
 
 function vem(nProj){
@@ -103,7 +99,6 @@ function pula(nProj, idProj){
     }
 
     stateModule.changeState(idProj)
-    console.log(stateModule.getState())
     document.getElementById("Project" + stateModule.getState()).style = "font-weight:700";
 
     text = ProjectText(stateModule.getState()); //Position 0 - Title, Position 1 - Description
