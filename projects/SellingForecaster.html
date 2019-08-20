@@ -12,17 +12,41 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../styles/styleProjects.css">
+        <link rel="stylesheet" href="../styles/contact.css">
+        <link rel="stylesheet" href="../styles/projectNavigation.css">
+        <link rel="stylesheet" href="../styles/navbar.css">
+
 
 </head>
 
 <body>
     <div id = "wrapper">
 
-        <ul>
-            <li><a href="index.html">Hello Stranger</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
+        <div id = "contact">
+                <ul>
+                    <li><a href = "http://github.com/douglasliralima" target="_blank"><img class = "icon" src = "../Assets/github.png"></a></li>
+                    <li><a href = "https://www.linkedin.com/in/douglasliralima/" target="_blank"><img class = "icon" src = "../Assets/linkedin.png"></a></li>
+                </ul>    
+        </div>
+
+        <div id = "project-navigation">
+                <div id = "navbar">
+                        <ul>
+                            <li><span><a href = "../index.html">Home</a> > Inventory Managament System</span></li>
+                        </ul>    
+                </div>
+                <ul>
+                    <li id = "previous-project">
+                        <a href = "LibrasTranslator.html"><img class = "icon" src = "../Assets/previous.png"></a>
+                        <span>Libras Translator</span>
+                    </li>
+                    <li id = "next-project">
+                        <span>Data Structure Visualization</span>
+                        <a href = "DataStructureVisualization.html"><img class = "icon" src = "../Assets/next.png"></a>
+                    </li>
+                </ul>    
+        </div>
 
         <h1>Inventory Managament System</h1>
         <p class = "SourceCode">Codigo Fonte: Privado</p>
@@ -33,12 +57,15 @@
             holding cost, custo de transporte, dentre outros.
         </p>
         <h2>Contributions</h2>
+        <hr>
+
         <p>
             Para esse projeto, particei de uma dupla com desenvolvedor <a href = "https://github.com/ArmandoTGT">Armando Neto</a>
         que me auxiliou na criação de uma API REST capaz de enviar a um sistema maior de gerenciamento de inventário
         dados uma previsão de vendas ou uma sugestão de ponto de produto, seguindo essa previsão e outras regras de negócio.<br>
         
-        <h3>PreProcessing</h3>
+        <h2>PreProcessing</h2>
+        <hr>
 
         </p>
             Essa foi uma parte bastante desafiadora dentre as minhas contribuições para o projeto, devido a alguns
@@ -47,20 +74,26 @@
         do histórico, além de lidar com erros humanos.
         </p>
 
-        <h3>Data Pipeline</h3>
+        <h2>Data Pipeline</h2>
+        <hr>
+
         <p>
             Para garantir que os problemas encontrados no preprocessamento não se repetissem, também criei um pipeline de
         dados para garantir um melhor ambiente para futuros cientistas de dados que forem manipular essas bases.        
         </p>
         
-        <h3>Sales Forecast</h3>
+        <h2>Sales Forecast</h2>
+        <hr>
+
         <p>
           Com o ambiente pronto, gerenciei uma série de métodos procurando um que se melhor encaixasse no problema de vendas
           para os dados que me eram disponíveis, dentre os usados, aqueles que obteram melhores resultados para esse problema
           como informado em um artigo cientifico que em breve estará disponível foram <strong>XGBoost</strong> e <strong>Arima</strong>
         </p>
 
-        <h3>API REST</h3>
+        <h2>API REST</h2>
+        <hr>
+            
         <p>
             Com a finalização dessas etapas, otimização dos modelos eu criei um API REST para que esse
             sistema pudesse ser integrado a um já existente utilizando o microframework <strong>Flask</strong>
@@ -71,15 +104,5 @@
         
 
 </body>
-
-<footer>
-                <a href="https://github.com/douglasliralima" target="_blank">
-                        <img src="Assets/github.png" title="github link" alt="github link">
-                </a>
-
-                <a href="https://www.linkedin.com/in/douglasliralima/" target="_blank">
-                        <img src="Assets/linkedin.png" title="github link" alt="github link">
-                </a>
-</footer>
 
 </html>

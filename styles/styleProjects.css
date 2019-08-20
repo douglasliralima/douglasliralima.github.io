@@ -1,0 +1,33 @@
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+div#wrapper {
+    padding: 10% 25%;
+}
+
+
+strong {
+    font-weight: 700;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 26px;
+    display:inline-block; 
+}
+
+
+h2 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 20px;
+    background-color: #c0e7ec;
+    display:inline-block; 
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
