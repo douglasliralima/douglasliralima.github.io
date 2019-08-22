@@ -4,11 +4,12 @@ body {
 }
 
 div#wrapper {
-    padding: 10% 25%;
+    padding: 10% 15%;
 }
 
 
 strong {
+    color : black;
     font-weight: 700;
 }
 
@@ -30,4 +31,21 @@ h2 {
 .icon {
     width: 40px;
     height: 40px;
+}
+
+span {
+    font-size : 13px;
+}
+
+a {
+    color : black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    color : #999999;
+    text-decoration: underline;
+    font-weight: 700;
+    z-index: 1;
 }

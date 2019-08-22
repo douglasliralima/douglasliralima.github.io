@@ -17,7 +17,7 @@ var stateModule = (function () {
 function ProjectText(ProjectNumber){
     switch(ProjectNumber){
         case 0:
-            return ["Selling Forecaster", "Criação de uma API REST, capaz de realizar a previsão de vendas de produto e estimativa automática de estoque."];
+            return ["Inventory Management System", "Criação de uma API REST, capaz de realizar a previsão de vendas de produto e estimativa automática de estoque."];
         case 1:
             return ["Libras Translator", "Projeto de pesquisa no Lavid para a tradução de libras para linguagem natural."];
         case 2:

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <!--Bootstrap stuff-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+        <link rel="stylesheet" href="../styles/styleProjects.css">
+        <link rel="stylesheet" href="../styles/contact.css">
+        <link rel="stylesheet" href="../styles/projectNavigation.css">
+        <link rel="stylesheet" href="../styles/navbar.css">
+
+
+</head>
+
+<body>
+    <div id = "wrapper">
+
+        <div id = "contact">
+                <ul>
+                    <li><a href = "http://github.com/douglasliralima" target="_blank"><img class = "icon" src = "../Assets/github.png"></a></li>
+                    <li><a href = "https://www.linkedin.com/in/douglasliralima/" target="_blank"><img class = "icon" src = "../Assets/linkedin.png"></a></li>
+                </ul>    
+        </div>
+
+        <div id = "project-navigation">
+                <div id = "navbar">
+                        <ul>
+                            <li><span><a href = "../index.html">Home</a> > Inventory Managament System</span></li>
+                        </ul>    
+                </div>
+                <ul>
+                    <li id = "previous-project">
+                        <a href = "LibrasTranslator.html"><img class = "icon" src = "../Assets/previous.png"></a>
+                        <span>Libras Translator</span>
+                    </li>
+                    <li id = "next-project">
+                        <span>Numerical Calculus</span>
+                        <a href = "Web-NumericalCalculus.html"><img class = "icon" src = "../Assets/next.png"></a>
+                    </li>
+                </ul>    
+        </div>
+
+        <h1>Dungeon Scrolls</h1><br>
+        <span>Codigo Fonte : <a href = "https://github.com/douglasliralima/DungeonScrolls" target = "_blank">Publico</a></span>
+        <br><br>
+
+        <p>
+            Projeto criado entre mim e os meus colegas para facilitar o gerenciamento de nossas
+            sessões de RPG, permitindo o controle do número de personagens e seus atributos, o 
+            número de jogadores, armazenamento de livros entre outras feature, mas tendo como destaque
+            a criação de monstros a partir de técnicas de Machine Learning.
+
+        </p>
+        <h2>Contributions</h2>
+        <hr>
+
+        <p>
+            Nesse projeto eu participei no dimensionamento do design de algumas das telas 
+            a partir de um protótipo feito em photoshop.<br>
+            Minha outra contribuição veio de um dos principais motivos que nos levou a criação desse
+            programa que vinha da criação de monstros personalizado na sessão e que não tenha sido
+            especificados nos livros dos monstros.
+        </p>
+
+        <h2>Android App</h2>
+        <hr>
+
+        <p>
+            A criação das telas foram feitas usando a linguagem de marcação XML em conjunto 
+            com a funcionalidade de drag and drop, disponíveis pelo Android Studio para o 
+            dimensionamento das telas. A grande maioria dos icônes ou imagens da aplicação foram criações originais
+            feitas em photoshop.
+            <br><br><i>imagens</i><br><br>
+            A parte lógica da aplicação foi feita utilizando o Java, tendo a parte do salvamento
+            de dados da aplicação em um banco SQLite local servindo como cache e um online a partir
+            do firebase para atualização dos dados para a construção da parte dinâmica das telas.
+        </p>
+
+        <h2>Creation of Artificial Monsters</h2>
+        <hr>
+
+        <p>
+            Eu fiquei responsável por essa feature da aplicação, foi aqui que eu tive o meu
+            primeiro contato com inteligência artificial, pois todos os algoritmos usados na 
+            aplicação foram estudados durante o desenvolvimento do App, como Knn, Svm, Neural
+            Network and Random Forest. Devido as bibliotecas mais bem estabelicidas hoje serem encontradas em python, ao
+            volume do dataset e a facilidade da linguagem na manipulação e visualização de dados,
+            foi criado um servidor remoto que mandava para a aplicação os dados do novo monstro
+            a partir de informações como o nível do monstro, tipo, raça, ambiente, etc...<br>
+            <br><br><i>imagem</i>
+        </p>
+        
+    </div>
+        
+
+</body>
+
+</html>

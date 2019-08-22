@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <!--Bootstrap stuff-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+        <link rel="stylesheet" href="../styles/styleProjects.css">
+        <link rel="stylesheet" href="../styles/contact.css">
+        <link rel="stylesheet" href="../styles/projectNavigation.css">
+        <link rel="stylesheet" href="../styles/navbar.css">
+
+
+</head>
+
+<body>
+    <div id = "wrapper">
+
+        <div id = "contact">
+                <ul>
+                    <li><a href = "http://github.com/douglasliralima" target="_blank"><img class = "icon" src = "../Assets/github.png"></a></li>
+                    <li><a href = "https://www.linkedin.com/in/douglasliralima/" target="_blank"><img class = "icon" src = "../Assets/linkedin.png"></a></li>
+                </ul>    
+        </div>
+
+        <div id = "project-navigation">
+                <div id = "navbar">
+                        <ul>
+                            <li><span><a href = "../index.html">Home</a> > Libras Translator</span></li>
+                        </ul>    
+                </div>
+                <ul>
+                    <li id = "previous-project">
+                        <a href = "DungeonScrolls.html"><img class = "icon" src = "../Assets/previous.png"></a>
+                        <span>Dungeon Scrolls</span>
+                    </li>
+                    <li id = "next-project">
+                        <span>Data Structure Visualization</span>
+                        <a href = "DataStructureVisualization.html"><img class = "icon" src = "../Assets/next.png"></a>
+                    </li>
+                </ul>    
+        </div>
+
+        <h1>Numerical Calculus</h1><br>
+        <span>Codigo Fonte : <a href = "https://github.com/douglasliralima/Web-CalculoNumerico" target = "_blank">Publico</a></span>
+        <br><br>
+        <p>
+            Projeto de desenvolvimento proposto pelo professor Gustavo Peixoto para o auxiliar
+            em sua disciplina no ensino de calculo númerico para alunos de computação, de forma
+            a gerar interesse por eles, mostrando nessa aplicação o uso direto dos métodos ensinados
+            em sua aula.
+
+        </p>
+        <h2>Contributions</h2>
+        <hr>
+
+        <p>
+            Nesse projeto eu fiquei responsável pela criação de um servidor Django, capaz
+            de integrar os scripts feitos em python para o calculo de equações usando os
+            métodos númericos com paginas html desenvolvido com o auxilio do Bootstrap.
+        </p>
+
+        <h2>Métodos Numéricos</h2>
+        <hr>
+
+        <p>
+            Implementação dos métodos do binômino de newton(...) usando as bibliotecas do
+            numpy array e scipy, de forma a retornar um conjunto de valores com as iterações
+            feitas pelos métodos procurando convergir no resultado correto da equações passadas,
+            a partir de ponto iniciais.
+        </p>
+
+        <h2>Design de páginas</h2>
+        <hr>
+
+        <p>
+            A definição estrutural das páginas foram feitas usando o Bootstrap, framework de 
+            html, css e JavaScript que facilita a criação de páginas, provendo vários elementos
+            para serem usadas em nossa página, sendo eles customizaveis.
+            <br><br><i>imagens</i><br><br>
+        </p>
+
+        <h2>Paginação Dinamica com servidor Django</h2>
+        <hr>
+
+        <p>
+            A partir do pressuposto do processamento pesado que alguns métodos de calculo
+            numérico em suas iterações até sua convergência, optamos pelo método de 
+            criação dinâmica de páginas em backend a partir de um servidor Django usando
+            o protocolo HTTP.
+            <br><br><i>imagem</i><br><br>
+            Com o auxilio do Jinja, deixamos pontos chaves em nossos templates, de forma
+            a esses pontos serem modificados construidos a partir de requisições get ou post
+            por parte do cliente para fazer certas ações no frontend. Com isso nos verificamos
+            aquela requisição e construiamos uma página, usando o python com o Jinja provido 
+            junto do Django, para modificar a pagina, alterando o template.
+        </p>
+
+    </div>
+        
+
+</body>
+
+</html>
