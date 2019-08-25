@@ -2,20 +2,21 @@
 <html lang="en">
 
 <head>
-        <meta charset="utf-8">
-        <!--Bootstrap stuff-->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <!--Bootstrap stuff-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-        <link rel="stylesheet" href="../styles/styleProjects.css">
-        <link rel="stylesheet" href="../styles/contact.css">
-        <link rel="stylesheet" href="../styles/projectNavigation.css">
-        <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/styleProjects.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/projectNavigation.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/images.css">
 
 
 </head>
@@ -33,7 +34,7 @@
         <div id = "project-navigation">
                 <div id = "navbar">
                         <ul>
-                            <li><span><a href = "../index.html">Home</a> > Libras Translator</span></li>
+                            <li><span><a href = "../index.html">Home</a></span></li>
                         </ul>    
                 </div>
                 <ul>
@@ -76,9 +77,8 @@
             gender and ethnicity, which results in 338 recorded videos. Afterwards, 
             we preprocess the videos with the FFmpeg software, extracting  20 images per second
             of the videos collected. Some examples of these images are bellow:
-            <br><br><i>imagens</i><br><br>
         </p>
-
+        <img class = "centralize-images" src = "../Assets/librasTranslator1.png"><br>
         <h2>Preprocessamento</h2>
         <hr>
 
@@ -93,20 +93,18 @@
                 <li>A shear factor of 0.8 at maximum;</li>
                 <li>Rotation with a range of 0 to a maximum of 10º in clockwise or counterclockwise of the original image;</li>
                 <li>Mirroring the samples.</li>
-            </lu><br>
+            </lu>
                 
-            <i>imagens</i><br>
-            Figure 2: Some examples of images of the dataset after applying data augmentation.
-            <br><br>
+            <img class = "centralize-images" src = "../Assets/librasTranslator2.png"><br>
+   
             
             The resulting final dataset consists of approximately 224000 images, 
             from the 26 letters of the Libras alphabet signed by 13 persons in 
             different backgrounds, body arm, and hand positions, and different lighting 
             patterns were generated.
-            <br><br><i>imagens</i><br><br>
         </p>
 
-        <h2>Pipeline de dados</h2>
+        <h2>Data Pipeline</h2>
         <hr>
 
         <p>
@@ -138,8 +136,12 @@
             on more robust architectures like VGG16, InceptionResNetV2, respectively 
             with accuracy in ImageNet of 71% and 80% in NasNetLarge which is also more 
             recent than the other two cited and achieved state of the art accuracy of 83% 
-            in the same dataset.
-            <br><br><i>imagem</i><br><br>
+            in the same dataset.We can see these results in confusion matrix below to VGG16 
+            and MobileNet, respectively:
+            <br>
+                <img class = "libras-confusion" src = "../Assets/librasTranslator3.png">
+                <img class = "libras-confusion" src = "../Assets/librasTranslator4.png">
+            <br>
         </p>
     </div>
         

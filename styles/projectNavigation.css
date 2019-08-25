@@ -6,12 +6,14 @@
     position : fixed;
     right : 5px;
     top : 50%;
+    z-index: 1;
 }
 
 #project-navigation ul li#previous-project{
     position : fixed;
     left : 5px;
     top : 50%;
+    z-index: 1;
 }
 
 #project-navigation ul li span{
