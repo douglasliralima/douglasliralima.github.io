@@ -49,24 +49,23 @@
         </div>
 
         <h1>Libras Translator</h1><br>
-        <span>Codigo Fonte : <a href = "https://github.com/douglasliralima/Sign4Text" target = "_blank">Publico</a></span>
+        <span>Source Code : <a href = "https://github.com/douglasliralima/Sign4Text" target = "_blank">Public</a></span>
         <br><br>
         <p>
-            Projeto de pesquisa desenvolvido no laboratório de vídeo para a tradução 
-            de sinais de Libras(Linguagem brasileira de sinais) para linguagem natural
-            usando redes neurais convolucionais.
-
+                Research project developed in the video laboratory for the translation of 
+                Libras (Brazilian Sign Language) signals into natural language using 
+                convolutional neural networks.
         </p>
         <h2>Contributions</h2>
         <hr>
 
         <p>
-            Nesse projeto, eu fiquei responsável do preprocessamento de dados, desde o reshape
-            da imagem, carregamento estratificado da base, até a alimentação das arquiteturas
-            estado da arte de redes neurais.
+            In this project, I was responsible from the pre-processing data, like reshape of images or
+            stratified loading the database, to feeding of state of the art neural network 
+            architectures.
         </p>
 
-        <h2>Criação da base</h2>
+        <h2>Creation of dataset</h2>
         <hr>
 
         <p>
@@ -74,10 +73,9 @@
             practical situations, to build this, initially we recorded videos for each of the 26 letters
             of the alphabet in Libras with 13 users considering different environments, 
             backgrounds, signers, body, arms and hand positions, lighting patterns, age, 
-            gender and ethnicity, which results in 338 recorded videos.<br><br>
-            Afterwards, we preprocess the videos with the FFmpeg software, extracting 
-            20 images per second of the videos collected. Some examples of these images are 
-            bellow:
+            gender and ethnicity, which results in 338 recorded videos. Afterwards, 
+            we preprocess the videos with the FFmpeg software, extracting  20 images per second
+            of the videos collected. Some examples of these images are bellow:
             <br><br><i>imagens</i><br><br>
         </p>
 
@@ -86,8 +84,8 @@
 
         <p>
 
-            Afterward, we apply a data augmentation in these images/samples, using Keras. The parameters 
-            applied in this data augmentation were as follows:
+            Initially we apply data augmentation in images/samples, using Keras. The parameters 
+            applied were as follows:
 
             <br><lu>
                 <li>Zoom factor of  0.2 at maximum;</li>
@@ -112,7 +110,7 @@
         <hr>
 
         <p>
-            Before training, we also use a stratified collection of samples in batches,
+            Before training, we load a stratified collection of samples in batches,
             due to the difficulty in managing the use of memory in the platform that
             we use for training and testing. More specifically, for each of the 26 
             letters of the alphabet, the largest possible number of images were taken,
@@ -123,7 +121,6 @@
             For example, for the VGG16 model, we were only able to run 44,800 instances (images) 
             per batch. Thus, we had to execute five batches of 44,800 images to complete one 
             eppoch (224 thousand images).            
-            <br><br><i>imagem</i>
         </p>
 
 
@@ -135,7 +132,7 @@
             real situations and ubiquitously, we focus on the use of neural network architectures 
             that were efficient for use in smartphones or embedded systems, but which also 
             presented good results in competitions or in works in other areas of computer 
-            vision, such as the  MobileNet, with 71% in ImageNet and NASNetMobile, which 
+            vision, such as the MobileNet, with 71% in ImageNet dataset and NASNetMobile, which 
             was proposed more recently and has better results in ImageNet (74.1%) when 
             compared to MobileNet. However, for comparison, we also perform tests 
             on more robust architectures like VGG16, InceptionResNetV2, respectively 

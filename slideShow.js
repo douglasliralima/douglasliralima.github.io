@@ -24,8 +24,6 @@ function ProjectText(ProjectNumber){
             return ["Dungeon Scrolls", "Gerenciador de mesas de RPG e gerador de monstros para dispositivos Android."];
         case 3:
             return ["Web-Numerical Calculus", "Criação de um site, a pedido do Prof. Gustavo Peixoto, para a demonstração dos métodos de calculo numérico."];
-        case 4:
-            return ["Data Structure Visualization", "Aplicação desktop, a pedido do Prof. Thiago Maritan, para a demonstração gráfica dos algoritmos fundamentais de estrutura de dados"];
     }
 }
 

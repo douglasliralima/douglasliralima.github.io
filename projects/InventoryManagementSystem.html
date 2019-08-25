@@ -38,8 +38,8 @@
                 </div>
                 <ul>
                     <li id = "previous-project">
-                        <a href = "DataStructureVisualization.html"><img class = "icon" src = "../Assets/previous.png"></a>
-                        <span>Data Structure Visualization</span>
+                        <a href = "Web-NumericalCalculus.html"><img class = "icon" src = "../Assets/previous.png"></a>
+                        <span>Numerical Calculus</span>
                     </li>
                     <li id = "next-project">
                         <span>Libras Translator</span>
@@ -49,57 +49,62 @@
         </div>
 
         <h1>Inventory Managament System</h1><br>
-        <span>Codigo Fonte : <strong>Privado</strong></span>
+        <span>Source Code : <strong>Privado</strong></span>
         <br><br>
 
         <p>
-            O Armazem paraíba, assim como empresas de varejo, devido ao seu tamanho e porte,
-            possui um sistema de Inventory Managament, que continuamente está sendo melhorado, 
-            de modo a otimizar ao máximo os custos bem conhecidos na teoria de inventário como 
-            holding cost, custo de transporte, dentre outros.
+            Armazem Paraíba, as well as others retail companies, due to its size and size, 
+            has an Inventory Management system, which is continually being improved with new 
+            algorithms and business rules in order to maximize costs such as holding cost, 
+            transportation cost, shortage cost among others.
         </p>
         <h2>Contributions</h2>
         <hr>
 
         <p>
-            Para esse projeto, particei de uma dupla com desenvolvedor <a href = "https://github.com/ArmandoTGT">Armando Neto</a>
-        que me auxiliou na criação de uma API REST capaz de enviar a um sistema maior de gerenciamento de inventário
-        dados uma previsão de vendas ou uma sugestão de ponto de produto, seguindo essa previsão e outras regras de negócio.<br>
-        
+            This time i integrate in the project by a creation of an API REST, Able to send 
+            the sales forecast of one or more products, along with a suggestion of moving the 
+            product over a time window, in order to satisfy that demand and minimize costs.
+        </p>
+
         <h2>PreProcessing</h2>
         <hr>
 
         </p>
-            Essa foi uma parte bastante desafiadora dentre as minhas contribuições para o projeto, devido a alguns
-        problemas com a base e devido ao fato de que apenas recenmente um banco de dados foi implementado nesse
-        sistema, logo tive nessa etapa que lidar com algumas diferença de normalização entre os dados no decorrer
-        do histórico, além de lidar com erros humanos.
+            This was a very challenging part of my contributions to the project, due to some issues 
+            with the base, like fact that only recently a database was implemented in this system,
+            until a few months ago these records were made only by hand, so I had to deal with some 
+            normalization differences in the data over time, and deal with a range of human errors.
         </p>
 
         <h2>Data Pipeline</h2>
         <hr>
 
         <p>
-            Para garantir que os problemas encontrados no preprocessamento não se repetissem, também criei um pipeline de
-        dados para garantir um melhor ambiente para futuros cientistas de dados que forem manipular essas bases.        
+            To ensure that the problems encountered in preprocessing not happen again, I also 
+            create a data pipeline to ensure a better environment for future data scientists 
+            manipulating these databases.
         </p>
         
-        <h2>Sales Forecast</h2>
+        <h2>Sales Problem</h2>
         <hr>
 
         <p>
-          Com o ambiente pronto, gerenciei uma série de métodos procurando um que se melhor encaixasse no problema de vendas
-          para os dados que me eram disponíveis, dentre os usados, aqueles que obteram melhores resultados para esse problema
-          como informado em um artigo cientifico que em breve estará disponível foram <strong>XGBoost</strong> e <strong>Arima</strong>
+            With the environment ready, I managed a series of methods looking for one that best fit 
+            that sales problem for the data available to me. Among the machine learning methods used, 
+            the ones that obtained the best results for this problem were <strong>XGBoost</strong> 
+            and <strong>Arima</strong>.<br>
+            After Sales forecasting, we calculate a moving suggestion, from the analysis of the 
+            company's business rules and the use of optimization algorithms.
         </p>
 
         <h2>API REST</h2>
         <hr>
             
         <p>
-            Com a finalização dessas etapas, otimização dos modelos eu criei um API REST para que esse
-            sistema pudesse ser integrado a um já existente utilizando o microframework <strong>Flask</strong>
-            para ter maior controle e segurança na hora da anexação de certas regras de negócio.
+            For Inventory Management system take these predictions and suggestions, I create an
+            simple API REST, by microframework <strong>Flask</strong>, with just a few endpoints,
+            to get the data to Sales Problem and post sales updates that go on over time.
         </p>
         
     </div>
