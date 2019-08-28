@@ -2,36 +2,39 @@
 <html lang="en">
 
 <head>
-        <meta charset="utf-8">
-        <title>Douglas Dimension</title>
-        <!--Bootstrap stuff-->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>Douglas Dimension</title>
+    <!--Bootstrap stuff-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <!--CSS-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/styleIndex.css">
-        <link rel="stylesheet" href="styles/home.css">
-        <link rel="stylesheet" href="styles/resume.css">
-        <link rel="stylesheet" href="styles/projectsSlideShow.css">
-        <link rel="stylesheet" href="styles/contact.css">
+    <!--CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styleIndex.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/resume.css">
+    <link rel="stylesheet" href="styles/projectsSlideShow.css">
+    <link rel="stylesheet" href="styles/contact.css">
 
-        
-        <!--JavaScript-->
-        <script src="slideShow.js"></script>
+    
+    <!--JavaScript-->
+    <script src="slideShow.js"></script>
 </head>
 
 <body>
+    <!--Navbar-->
     <div class = "section" id = "contact">
         <ul>
             <li><a href = "http://github.com/douglasliralima" target="_blank"><img class = "icon" src = "Assets/github.png"></a></li>
             <li><a href = "https://www.linkedin.com/in/douglasliralima/" target="_blank"><img class = "icon" src = "Assets/linkedin.png"></a></li>
         </ul>    
     </div>
+
+    <!--Texto de introdução-->
     <div class = "section" id = home>
         <p id = "introduction">
             Hello there, I’m <strong>Douglas</strong>.
@@ -47,14 +50,24 @@
             <span style = "background-color: #ea9999">deep learning</span>.
         </p>
     </div>
+
+    <!--Seleção de projetos rdstation-->
     <div class = "section" id = "projects">
         <div class="row">
             <div class="col">
                 <ul >
-                    <li id = "Project0"><button onclick="return pula(4, 0)">Inventory Management System</button></li>
-                    <li id = "Project1"><button onclick="return pula(4, 1)">Libras Translator</button></li>
-                    <li id = "Project2"><button onclick="return pula(4, 2)">Dungeon Scrolls</button></li>
-                    <li id = "Project3"><button onclick="return pula(4, 3)">Web-Numerical Calculus</button></li>
+                    <li id = "Project0">
+                        <a href = "projects/InventoryManagementSystem.html" onmouseover="return pula(4, 0)">Inventory Management System</a>
+                    </li>
+                    <li id = "Project1">
+                        <a href = "projects/LibrasTranslator.html" onmouseover="return pula(4, 1)">Libras Translator</a>
+                    </li>
+                    <li id = "Project2">
+                        <a href = "projects/DungeonScrolls.html" onmouseover="return pula(4, 2)" >Dungeon Scrolls</a>
+                    </li>
+                    <li id = "Project3">
+                        <a href = "projects/Web-NumericalCalculus.html" onmouseover="return pula(4, 3)" >Web-Numerical Calculus</a>
+                    </li>
                 </ul>           
             </div>
             <div class="col">
@@ -64,62 +77,63 @@
                         <input type="image" onclick="vai(4)" src="Assets/ArrowRight.png" class = "control">
                     </li>
                     <li>
-                            <p id = "projectDescription">
-                                    Criação de uma API REST, capaz de realizar a previsão de vendas de produto e 
-                                    estimativa automática de estoque.
-                                </p>
-                                <script type="text/javascript">
-                                    letterAnimation("Inventory Management System");
-                                    setInterval(function(){vai(4);}, 8000)                                </script>
+                        <p id = "projectDescription">
+                            Criação de uma API REST, capaz de realizar a previsão de vendas de produto e 
+                            estimativa automática de estoque.
+                        </p>
+                        
+                        <script type="text/javascript">
+                            letterAnimation("Inventory Management System");
+                            setInterval(function(){vai(4);}, 10000)                                
+                        </script>
                     </li>
                 </ul>   
-             </div>
-          </div>
+            </div>
+        </div>
     </div>
         
     <div class = "section" id = "resume">
         <div class = "row">
             <div class = "col">
-                    <ul>
-                        <li><h1>Experience</h1></li><br>
+                <ul>
+                    <li><h1>Experience</h1></li><br>
 
-                        <li>
-                            <strong>Data Scientist</strong> Nov 2018 - Aug 2019 <br>
-                            Armazem PB
-                        </li><br>
-                        <li>
-                            <strong>Researcher</strong> Jun 2018 - Present <br>
-                            Lab of Digital Video Applications
-                        </li>
-                    </ul>
-                        
+                    <li>
+                        <strong>Data Scientist</strong> Nov 2018 - Aug 2019 <br>
+                        Armazem PB
+                    </li><br>
+                    <li>
+                        <strong>Researcher</strong> Jun 2018 - Present <br>
+                        Lab of Digital Video Applications
+                    </li>
+                </ul>                   
         
-                </div>
+            </div>
         
-                <div class = "col">
-                    <ul>
-                        <li><h1>Education</h1></li><br>
-
-                        <li>
-                            <strong>Scholarship holder</strong> Nov 2018 - Nov 2019<br>
-                            Tutorial Education Program
-                        </li><br>
-                        <li>
-                            <strong>B.S. Computer Science</strong> Oct 2019<br>
-                            UFPB - Federal University of paraiba
-                        </li>
-                    </ul>
-                </div>
             <div class = "col">
-                    <ul>
-                        <li><h1>Tech Skills</h1></li><br>
+                <ul>
+                    <li><h1>Education</h1></li><br>
 
-                        <li>Python, Flask, Django, Java, Android;</li><br>
-                        <li>HTML, JavaScript, React, Nodejs, CSS, Bootstrap;</li><br>
-                        <li>SQL, SQLite, PostgreSQL, MySQL, FireBase, MongoDB;</li><br>
-                        <li>Hadoop ecosystem, Tensorflow, Sklearn</li><br>
-                    </ul>
-                </div>
+                    <li>
+                        <strong>Scholarship holder</strong> Nov 2018 - Nov 2019<br>
+                        Tutorial Education Program
+                    </li><br>
+                    <li>
+                        <strong>B.S. Computer Science</strong> Oct 2019<br>
+                        UFPB - Federal University of paraiba
+                    </li>
+                </ul>
+            </div>
+            <div class = "col">
+                <ul>
+                    <li><h1>Tech Skills</h1></li><br>
+
+                    <li>Python, Flask, Django, Java, Android;</li><br>
+                    <li>HTML, JavaScript, React, Nodejs, CSS, Bootstrap;</li><br>
+                    <li>SQL, SQLite, PostgreSQL, MySQL, FireBase, MongoDB;</li><br>
+                    <li>Hadoop ecosystem, Tensorflow, Sklearn</li><br>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
