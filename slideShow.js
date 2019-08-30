@@ -104,3 +104,7 @@ function pula(nProj, idProj){
     document.getElementById("projectDescription").innerHTML = text[1]
     letterAnimation(text[0]);
 }
+
+function automaticCarrousel(){
+    
+}
