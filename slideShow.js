@@ -17,13 +17,13 @@ var stateModule = (function () {
 function ProjectText(ProjectNumber){
     switch(ProjectNumber){
         case 0:
-            return ["Inventory Management System", "Criação de uma API REST, capaz de realizar a previsão de vendas de produto e estimativa automática de estoque."];
+            return ["Inventory Management System", "Creation of a API REST, capable to do selling forecast of products and an automatic inventory estimate."];
         case 1:
-            return ["Libras Translator", "Projeto de pesquisa no Lavid para a tradução de libras para linguagem natural."];
+            return ["Libras Translator", "Reserch Project in Lavid(Lab of Digital Video Applications) for translation of LIBRAS(brazilian sign language) into natural language."];
         case 2:
-            return ["Dungeon Scrolls", "Gerenciador de mesas de RPG e gerador de monstros para dispositivos Android."];
+            return ["Dungeon Scrolls", "Application of a Role Player data manager and monster generator for Android devices."];
         case 3:
-            return ["Web-Numerical Calculus", "Criação de um site, a pedido do Prof. Gustavo Peixoto, para a demonstração dos métodos de calculo numérico."];
+            return ["Web-Numerical Calculus", "Creation of a website, for a demonstration of numerical calculation methods."];
     }
 }
 
@@ -41,10 +41,11 @@ function letterAnimation(title){
     newDom += "<br>"
 
     //Body
-    for(let i = 0; i < text.innerText.length; i++)
-    {
-        newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
-    }
+    var aux = text.innerText.split(' ')
+    aux.forEach((item, index) => {
+        newDom += '<span class="word">' + item + '</span>' + ' ';
+    })
+
     newDom += "</a>"
 
     //Adicionado o tempo de animação nos chars

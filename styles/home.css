@@ -11,5 +11,11 @@ div#home p#introduction {
     text-align : center;
     padding-right:  25%;
     padding-left: 25%;
-    font-size: 1.5vw;
+    font-size: 20px;
 }
+
+@media screen and (max-width: 600px) {
+    div#home p#introduction {
+        font-size: auto;
+    }
+  }

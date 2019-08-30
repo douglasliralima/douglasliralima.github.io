@@ -14,7 +14,7 @@ p#projectDescription .title{
     display: inline-block;
 }
 
-p#projectDescription .char{
+p#projectDescription .word{
     font-size: 20px;
     animation: an 2s ease-out 1 both;
     display: inline-block;
