@@ -49,101 +49,106 @@
                     </li>
                 </ul>    
         </div>
+        <div class = "section">
+            <div class = "row">
+                <div class = "col-md">
+                    <h1>Libras Translator</h1><br>
+                    <span>Source Code : <a href = "https://github.com/douglasliralima/Sign4Text" target = "_blank">Public</a></span>
+                    <br><br>
+                    <p>
+                            Research project developed in the video laboratory for the translation of 
+                            Libras (Brazilian Sign Language) signals into natural language using 
+                            convolutional neural networks.
+                    </p>
+                    <h2>Contributions</h2>
+                    <hr>
 
-        <h1>Libras Translator</h1><br>
-        <span>Source Code : <a href = "https://github.com/douglasliralima/Sign4Text" target = "_blank">Public</a></span>
-        <br><br>
-        <p>
-                Research project developed in the video laboratory for the translation of 
-                Libras (Brazilian Sign Language) signals into natural language using 
-                convolutional neural networks.
-        </p>
-        <h2>Contributions</h2>
-        <hr>
+                    <p>
+                        In this project, I was responsible from the pre-processing data, like reshape of images or
+                        stratified loading the database, to feeding of state of the art neural network 
+                        architectures.
+                    </p>
 
-        <p>
-            In this project, I was responsible from the pre-processing data, like reshape of images or
-            stratified loading the database, to feeding of state of the art neural network 
-            architectures.
-        </p>
+                    <h2>Creation of dataset</h2>
+                    <hr>
 
-        <h2>Creation of dataset</h2>
-        <hr>
+                    <p>
+                        Initially, we create a dataset of videos that aims to get closer to real
+                        practical situations, to build this, initially we recorded videos for each of the 26 letters
+                        of the alphabet in Libras with 13 users considering different environments, 
+                        backgrounds, signers, body, arms and hand positions, lighting patterns, age, 
+                        gender and ethnicity, which results in 338 recorded videos. Afterwards, 
+                        we preprocess the videos with the FFmpeg software, extracting  20 images per second
+                        of the videos collected. Some examples of these images are bellow:
+                    </p>
+                    <img class = "centralize-images" src = "../Assets/librasTranslator1.png"><br>
+                    <h2>Preprocessamento</h2>
+                    <hr>
 
-        <p>
-            Initially, we create a dataset of videos that aims to get closer to real
-            practical situations, to build this, initially we recorded videos for each of the 26 letters
-            of the alphabet in Libras with 13 users considering different environments, 
-            backgrounds, signers, body, arms and hand positions, lighting patterns, age, 
-            gender and ethnicity, which results in 338 recorded videos. Afterwards, 
-            we preprocess the videos with the FFmpeg software, extracting  20 images per second
-            of the videos collected. Some examples of these images are bellow:
-        </p>
-        <img class = "centralize-images" src = "../Assets/librasTranslator1.png"><br>
-        <h2>Preprocessamento</h2>
-        <hr>
+                    <p>
 
-        <p>
+                        Initially we apply data augmentation in images/samples, using Keras. The parameters 
+                        applied were as follows:
 
-            Initially we apply data augmentation in images/samples, using Keras. The parameters 
-            applied were as follows:
-
-            <br><lu>
-                <li>Zoom factor of  0.2 at maximum;</li>
-                <li>Increase/Decrease of illumination with a range maximum of 30% of the original illumination;</li>
-                <li>A shear factor of 0.8 at maximum;</li>
-                <li>Rotation with a range of 0 to a maximum of 10º in clockwise or counterclockwise of the original image;</li>
-                <li>Mirroring the samples.</li>
-            </lu>
-                
-            <img class = "centralize-images" src = "../Assets/librasTranslator2.png"><br>
-   
+                        <br><lu>
+                            <li>Zoom factor of  0.2 at maximum;</li>
+                            <li>Increase/Decrease of illumination with a range maximum of 30% of the original illumination;</li>
+                            <li>A shear factor of 0.8 at maximum;</li>
+                            <li>Rotation with a range of 0 to a maximum of 10º in clockwise or counterclockwise of the original image;</li>
+                            <li>Mirroring the samples.</li>
+                        </lu>
+                            
+                        <img class = "centralize-images" src = "../Assets/librasTranslator2.png"><br>
             
-            The resulting final dataset consists of approximately 224000 images, 
-            from the 26 letters of the Libras alphabet signed by 13 persons in 
-            different backgrounds, body arm, and hand positions, and different lighting 
-            patterns were generated.
-        </p>
+                        
+                        The resulting final dataset consists of approximately 224000 images, 
+                        from the 26 letters of the Libras alphabet signed by 13 persons in 
+                        different backgrounds, body arm, and hand positions, and different lighting 
+                        patterns were generated.
+                    </p>
 
-        <h2>Data Pipeline</h2>
-        <hr>
+                    <h2>Data Pipeline</h2>
+                    <hr>
 
-        <p>
-            Before training, we load a stratified collection of samples in batches,
-            due to the difficulty in managing the use of memory in the platform that
-            we use for training and testing. More specifically, for each of the 26 
-            letters of the alphabet, the largest possible number of images were taken,
-            which the memory of the training machine would be able to support, leaving only 
-            free space for the processing of main functions of the operating system, and other 
-            operations. <br><br>
+                    <p>
+                        Before training, we load a stratified collection of samples in batches,
+                        due to the difficulty in managing the use of memory in the platform that
+                        we use for training and testing. More specifically, for each of the 26 
+                        letters of the alphabet, the largest possible number of images were taken,
+                        which the memory of the training machine would be able to support, leaving only 
+                        free space for the processing of main functions of the operating system, and other 
+                        operations. <br><br>
 
-            For example, for the VGG16 model, we were only able to run 44,800 instances (images) 
-            per batch. Thus, we had to execute five batches of 44,800 images to complete one 
-            eppoch (224 thousand images).            
-        </p>
+                        For example, for the VGG16 model, we were only able to run 44,800 instances (images) 
+                        per batch. Thus, we had to execute five batches of 44,800 images to complete one 
+                        eppoch (224 thousand images).            
+                    </p>
 
 
-        <h2>Treinamento</h2>
-        <hr>
+                    <h2>Treinamento</h2>
+                    <hr>
 
-        <p>
-            Since our final goal is a solution that can be used by Brazilian deaf people in 
-            real situations and ubiquitously, we focus on the use of neural network architectures 
-            that were efficient for use in smartphones or embedded systems, but which also 
-            presented good results in competitions or in works in other areas of computer 
-            vision, such as the MobileNet, with 71% in ImageNet dataset and NASNetMobile, which 
-            was proposed more recently and has better results in ImageNet (74.1%) when 
-            compared to MobileNet. However, for comparison, we also perform tests 
-            on more robust architectures like VGG16, InceptionResNetV2, respectively 
-            with accuracy in ImageNet of 71% and 80% in NasNetLarge which is also more 
-            recent than the other two cited and achieved state of the art accuracy of 83% 
-            in the same dataset.We can see these results in confusion matrix below to VGG16 
-            and MobileNet, respectively:
-            <br>
-                <img class = "libras-confusion" src = "../Assets/librasTranslator3.png">
-                <img class = "libras-confusion" src = "../Assets/librasTranslator4.png">
-            <br>
-        </p>
+                    <p>
+                        Since our final goal is a solution that can be used by Brazilian deaf people in 
+                        real situations and ubiquitously, we focus on the use of neural network architectures 
+                        that were efficient for use in smartphones or embedded systems, but which also 
+                        presented good results in competitions or in works in other areas of computer 
+                        vision, such as the MobileNet, with 71% in ImageNet dataset and NASNetMobile, which 
+                        was proposed more recently and has better results in ImageNet (74.1%) when 
+                        compared to MobileNet. However, for comparison, we also perform tests 
+                        on more robust architectures like VGG16, InceptionResNetV2, respectively 
+                        with accuracy in ImageNet of 71% and 80% in NasNetLarge which is also more 
+                        recent than the other two cited and achieved state of the art accuracy of 83% 
+                        in the same dataset.We can see these results in confusion matrix below to VGG16 
+                        and MobileNet, respectively:
+                        <br>
+                            <img class = "libras-confusion" src = "../Assets/librasTranslator3.png">
+                            <img class = "libras-confusion" src = "../Assets/librasTranslator4.png">
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
         
 

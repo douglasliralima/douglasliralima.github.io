@@ -48,68 +48,73 @@
                     </li>
                 </ul>    
         </div>
+        <div class = "section">
+            <div class = "row">
+                <div class = "col-md">
+                    <h1>Inventory Managament System</h1><br>
+                    <span>Source Code : <strong>Privado</strong></span>
+                    <br><br>
 
-        <h1>Inventory Managament System</h1><br>
-        <span>Source Code : <strong>Privado</strong></span>
-        <br><br>
+                    <p>
+                        Armazem Paraíba, as well as others retail companies, due to its size and size, 
+                        has an Inventory Management system, which is continually being improved with new 
+                        algorithms and business rules in order to maximize costs such as holding cost, 
+                        transportation cost, shortage cost among others.
+                    </p>
+                    <h2>Contributions</h2>
+                    <hr>
 
-        <p>
-            Armazem Paraíba, as well as others retail companies, due to its size and size, 
-            has an Inventory Management system, which is continually being improved with new 
-            algorithms and business rules in order to maximize costs such as holding cost, 
-            transportation cost, shortage cost among others.
-        </p>
-        <h2>Contributions</h2>
-        <hr>
+                    <p>
+                        This time i integrate in the project by a creation of an API REST, Able to send 
+                        the sales forecast of one or more products, along with a suggestion of moving the 
+                        product over a time window, in order to satisfy that demand and minimize costs.
+                    </p>
 
-        <p>
-            This time i integrate in the project by a creation of an API REST, Able to send 
-            the sales forecast of one or more products, along with a suggestion of moving the 
-            product over a time window, in order to satisfy that demand and minimize costs.
-        </p>
+                    <h2>PreProcessing</h2>
+                    <hr>
 
-        <h2>PreProcessing</h2>
-        <hr>
+                    </p>
+                        This was a very challenging part of my contributions to the project, due to some issues 
+                        with the base, like fact that only recently a database was implemented in this system,
+                        until a few months ago these records were made only by hand, so I had to deal with some 
+                        normalization differences in the data over time, and deal with a range of human errors.
+                    </p>
 
-        </p>
-            This was a very challenging part of my contributions to the project, due to some issues 
-            with the base, like fact that only recently a database was implemented in this system,
-            until a few months ago these records were made only by hand, so I had to deal with some 
-            normalization differences in the data over time, and deal with a range of human errors.
-        </p>
+                    <h2>Data Pipeline</h2>
+                    <hr>
 
-        <h2>Data Pipeline</h2>
-        <hr>
+                    <p>
+                        To ensure that the problems encountered in preprocessing not happen again, I also 
+                        create a data pipeline to ensure a better environment for future data scientists 
+                        manipulating these databases.
+                    </p>
+                    
+                    <h2>Sales Problem</h2>
+                    <hr>
 
-        <p>
-            To ensure that the problems encountered in preprocessing not happen again, I also 
-            create a data pipeline to ensure a better environment for future data scientists 
-            manipulating these databases.
-        </p>
-        
-        <h2>Sales Problem</h2>
-        <hr>
+                    <p>
+                        With the environment ready, I managed a series of methods looking for one that best fit 
+                        that sales problem for the data available to me. Among the machine learning methods used, 
+                        the ones that obtained the best results for this problem were XGBoost
+                        and Arima.<br>
+                        After Sales forecasting, we calculate a moving suggestion, from the analysis of the 
+                        company's business rules and the use of optimization algorithms.
+                    </p>
 
-        <p>
-            With the environment ready, I managed a series of methods looking for one that best fit 
-            that sales problem for the data available to me. Among the machine learning methods used, 
-            the ones that obtained the best results for this problem were XGBoost
-            and Arima.<br>
-            After Sales forecasting, we calculate a moving suggestion, from the analysis of the 
-            company's business rules and the use of optimization algorithms.
-        </p>
-
-        <h2>API REST</h2>
-        <hr>
-            
-        <p>
-            For Inventory Management system take these predictions and suggestions, I create an
-            simple API REST, by microframework Flask, with just a few endpoints,
-            to get the data to Sales Problem and post sales updates that go on over time.
-        </p>
-        
+                    <h2>API REST</h2>
+                    <hr>
+                        
+                    <p>
+                        For Inventory Management system take these predictions and suggestions, I create an
+                        simple API REST, by microframework Flask, with just a few endpoints,
+                        to get the data to Sales Problem and post sales updates that go on over time.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
     </div>
-        
+
 
 </body>
 

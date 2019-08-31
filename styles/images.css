@@ -26,3 +26,20 @@ img.mobileScreen {
     max-width : 400px;
     max-height: 600px;
 }
+
+
+@media screen and (max-width: 600px) {
+    img.centralize-images{    
+        max-width : 400px;
+        max-height: 400px;
+    }
+    
+    img.libras-confusion {
+        max-width : 400px;
+        max-height: 400px;
+    }
+    
+    img.mobileScreen {
+        max-width : 400px;
+        max-height: 400px;
+  }
