@@ -1,3 +1,3 @@
 ## Link
 
-Clique [aqui](https://douglasliralima.github.io//) para abrir.
+Clique [aqui](https://douglasliralima.github.io/) para abrir.
