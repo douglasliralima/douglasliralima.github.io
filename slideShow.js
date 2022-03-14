@@ -29,7 +29,7 @@ function ProjectText(ProjectNumber){
 
 function letterAnimation(title){
     var text = document.getElementById('projectDescription');
-    var newDom = '<a href = "projects/' + title.replace(/ /g, '') + '.html" >';
+    var newDom = '<a href = "projects/' + title.replace(/ /g, '') + '.html" style="text-decoration: none" >';
     var animationDelay = 6;
 
     //Montagem da tag com classificacao de chars
@@ -103,8 +103,4 @@ function pula(nProj, idProj){
     text = ProjectText(stateModule.getState()); //Position 0 - Title, Position 1 - Description
     document.getElementById("projectDescription").innerHTML = text[1]
     letterAnimation(text[0]);
-}
-
-function automaticCarrousel(){
-    
 }
